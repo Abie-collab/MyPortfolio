@@ -1,5 +1,6 @@
 import { projectsData } from '../data/portfolioData';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
+import './Projects.css';
 
 const Projects = () => {
   return (
@@ -9,7 +10,15 @@ const Projects = () => {
         <Row className="g-4">
           {projectsData.map((project) => (
             <Col key={project.id} md={6} lg={4}>
-              <Card className="h-100 shadow-sm border-0">
+              <Card className="h-100 shadow-sm border-0 project-card">
+                <div className="project-image-wrapper">
+                  <Card.Img 
+                    variant="top" 
+                    src={project.imageUrl} 
+                    alt={project.title}
+                    className="project-image"
+                  />
+                </div>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="fw-bold">{project.title}</Card.Title>
                   <Card.Text className="text-muted small">{project.description}</Card.Text>
@@ -19,7 +28,7 @@ const Projects = () => {
                     <p className="mb-1 small"><strong>The Challenge:</strong> {project.challenge}</p>
                     <p className="mb-0 small"><strong>The Solution:</strong> {project.solution}</p>
                   </div>
-
+                  
                   {/* Tech Stack Badges */}
                   <div className="mt-auto">
                     <div className="mb-3">
@@ -41,4 +50,5 @@ const Projects = () => {
     </section>
   );
 };
+
 export default Projects;
