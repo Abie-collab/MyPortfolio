@@ -1,5 +1,6 @@
 import { Button, Container } from 'react-bootstrap';
-import resume from '../assets/abiolaoni_resume.pdf';
+import resumePdf from '../assets/abiolaoni_resume.pdf';
+
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
         </p>
         <div className="d-flex gap-3 justify-content-center">
           <Button variant="primary" size="lg" href="#projects">View My Work</Button>
-          <Button variant="outline-secondary" size="lg" href="{resumePdf}" target="_blank" download="resume.pdf">Download Resume</Button>
+          <Button variant="outline-secondary" size="lg" href={resumePdf} target="_blank" download="resume.pdf">Download Resume</Button>
         </div>
       </Container>
     </section>
