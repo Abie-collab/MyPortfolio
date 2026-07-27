@@ -22,7 +22,7 @@ export const projectsData = [
     techStack: ["React.js", "API"],
     challenge: "Managing complex state for drag-and-drop interactions while keeping API calls to a minimum.",
     solution: "I Implemented React Context API for efficient global state management of the shopping cart.",
-    liveUrl: "#",
+    liveUrl: "https://storeaura.page.gd/?i=1",
     githubUrl: "https://github.com/Abie-collab/Aurastore"
   },
   {
