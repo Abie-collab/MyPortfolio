@@ -1,9 +1,12 @@
 import { Container } from 'react-bootstrap';
 import { FaTools, FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaPhp, FaReact, FaGitAlt } from 'react-icons/fa';
 import { SiLaravel, SiMysql, SiMongodb } from 'react-icons/si';
+import amplifyIcon from '../assets/images/amplify.svg';
+import route53Icon from '../assets/images/route53.svg';
+
 
 const Skills = () => {
-  // Define your skills and their corresponding icons
+ 
   const skillsList = [
     { name: 'HTML5', icon: <FaHtml5 color="#E34F26" /> },
     { name: 'CSS3', icon: <FaCss3Alt color="#1572B6" /> },
@@ -15,18 +18,21 @@ const Skills = () => {
     { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
     { name: 'MongoDB', icon: <SiMongodb color="#47A248" /> },
     { name: 'Git/GitHub', icon: <FaGitAlt color="#F05032" /> },
+    { name: 'AWS Amplify', icon: <img src={amplifyIcon} alt="AWS Amplify" style={{ width: 20, height: 20 }} /> },
+    { name: 'Route 53', icon: <img src={route53Icon} alt="Route 53" style={{ width: 20, height: 20 }} /> },
+   
   ];
 
   return (
     <section id="skills" className="py-5 bg-light">
       <Container>
-        {/* Heading with Icon */}
+       
         <div className="d-flex align-items-center mb-4">
           <FaTools className="text-primary me-2" size={20} />
           <h2 className="fw-bold mb-0 h4">Tech stack</h2>
         </div>
 
-        {/* Skills Grid / Flex Wrap */}
+       
         <div className="d-flex flex-wrap gap-2">
           {skillsList.map((skill, index) => (
             <div key={index} className="skill-pill d-flex align-items-center">

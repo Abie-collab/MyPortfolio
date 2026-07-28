@@ -42,5 +42,5 @@ export const skillsData = {
   frontend: ["HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Bootstrap"],
   backend: ["PHP", "Laravel"],
   database: ["MySQL", "MongoDB"],
-  devops: ["Git", "GitHub", "Docker", "GitHub Actions (CI/CD)"]
+  devops: ["Git", "GitHub", "Docker", "GitHub Actions (CI/CD)","AWS Amplify", "Route 53"]
 };

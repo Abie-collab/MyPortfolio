@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="display-4 fw-bold">Hi, I'm Abiola ONI</h1>
         <p className="lead text-muted mb-4">
           A Full Stack Web Developer specializing in <strong>React</strong>, <strong>PHP</strong> and <strong>Laravel</strong>. <br/>
-          I build scalable, containerized web applications with clean architecture.
+        I build full stack web applications with clean, scalable architecture — from database schema to deployed UI.
         </p>
         <div className="d-flex gap-3 justify-content-center">
           <Button variant="primary" size="lg" href="#projects">View My Work</Button>
