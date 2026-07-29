@@ -33,7 +33,7 @@ export const projectsData = [
     techStack: ["Laravel", "MySQL", "Blade"],
     challenge: "An Admin interface was needed to manage room inventory, categories and bookings.",
     solution: "I leveraged Laravel's Eloquent ORM to write database queries spanning rooms, categories and booking also built role-based auth with custom middleware.",
-    liveUrl: "#",
+    liveUrl: "http://serenestay.site.je/",
     githubUrl: "https://github.com/Abie-collab/serenestay"
   }
 ];
