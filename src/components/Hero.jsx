@@ -1,5 +1,5 @@
 import { Button, Container } from 'react-bootstrap';
-import resumePdf from '../assets/abiolaoni_resume.pdf';
+import resumePdf from '../assets/abiola.pdf';
 
 
 const Hero = () => {
